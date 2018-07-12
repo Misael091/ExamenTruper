@@ -1,0 +1,7 @@
+{
+    "name": "Dev_test_Daniel_Misael_Juarez_Negrete", "version": "1.0.0", "main": "path/to/main.css", "ignore": [
+        ".jshintrc", "**/*.txt"
+    ], "dependencies": {
+    }, "devDependencies": {
+    }
+}

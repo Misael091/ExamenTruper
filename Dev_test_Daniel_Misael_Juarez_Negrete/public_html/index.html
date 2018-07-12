@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dev Test Truper</title>
+        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/component.css">
+    </head>
+    <body>
+        <!--=====Top Navigation=====-->
+        <div class="container">
+            <div class="main clearfix">
+                <div class="column">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <input class="sb-search-input" placeholder="Search your favorite artist..." type="text" value="" name="search" id="search">
+                            <input class="sb-search-submit" type="submit" >
+                            <span class="sb-icon-search"><i class="fas fa-search"></i></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=====End top Navigation=====-->
+
+
+        <!--=====Intro one=====-->
+        <div class="container"> 
+            <div class="main clearfix">
+                <div class="column" > 
+                    <a class="select-button" href="#" id="backward"><i class="fas fa-backward"></i></a>
+                </div>  
+            </div>   
+        </div>
+        <div class="container"> 
+            <div class="main clearfix">
+                <div class="column" > 
+                    <div class="plans" >            
+                        <ul class="pagination" >   
+                            <!--=====Get List Info=====-->
+                            <li class="page-item" id="list1"></li>
+                            <li class="page-item" id="list2"></li>
+                            <li class="page-item" id="list3"></li>
+                            <!--=====End Get List Info=====-->
+
+                        </ul>          
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container"> 
+            <div class="main clearfix">
+                <div class="column" > 
+                    <a class="select-button" href="#" id="forward"><i class="fas fa-forward"></i></a>
+                </div>  
+            </div>   
+        </div>
+        <!--=====End Intro one=====--> 
+
+
+        <!--=====Modal Operation=====--> 
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Alert search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>We do not have information about your artist...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--=====End Modal Operation=====-->
+
+        <!--=====Scripts have responsive on buttom=====-->
+        <script src="js/classie.js"></script>
+        <script src="js/uisearch.js"></script>
+        <script>
+            new UISearch(document.getElementById('sb-search'));
+        </script>
+        <!--=====End scripts have responsive on buttom=====-->
+
+
+        <!--=====Get JQuery 3.3.1=====-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--=====End Get JQuery 3.3.1=====-->
+
+        <!--=====Get Bootsrap 3.3.7=====-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--=====End Get JQuery 3.3.1=====-->
+
+
+        <!--=====Functions actives=====-->
+        <script src="js/actionfunctions.js"></script>
+        <!--=====End Functions actives=====-->
+
+
+    </body>
+</html>
